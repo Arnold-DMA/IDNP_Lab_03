@@ -10,19 +10,61 @@
         android:id="@+id/btnPaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="261dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="164dp"
         android:text="REGISTRAR PACIENTE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewDatos"
-        android:layout_width="257dp"
-        android:layout_height="218dp"
+        android:layout_width="348dp"
+        android:layout_height="124dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Datos"
+        android:text="Catidad de pacientes: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCorreo" />
+
+    <TextView
+        android:id="@+id/textViewDatos2"
+        android:layout_width="348dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Catidad de visitas: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatos" />
+
+    <Button
+        android:id="@+id/btnVisita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="32dp"
+        android:text="REGISTRAR VISITA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPaciente" />
+
+    <Button
+        android:id="@+id/btnCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="32dp"
+        android:text="ENVIAR CORREO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVisita" />
+
+    <EditText
+        android:id="@+id/editTextPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="DNI de Paciente"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPaciente" />
 
