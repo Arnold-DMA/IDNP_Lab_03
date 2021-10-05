@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextPaciente;
     private static final int REQUEST_CODE_PACIENTE = 101;
     private static final int REQUEST_CODE_VISITA = 102;
-    public static final String MESSAGE_DNI = "";
-    public static final String MESSAGE_NOMBRE = "";
-    public static final String MESSAGE_APELLIDO = "";
-    public static final String MESSAGE_DIRECCION = "";
-    public static final String MESSAGE_PESO = "";
-    public static final String MESSAGE_SATURACION = "";
-    public static final String MESSAGE_TEMPERATURA = "";
-    public static final String MESSAGE_PRESION = "";
+    public static final String MESSAGE_DNI = "DNI";
+    public static final String MESSAGE_NOMBRE = "Nombre";
+    public static final String MESSAGE_APELLIDO = "Apellido";
+    public static final String MESSAGE_DIRECCION = "Direccion";
+    public static final String MESSAGE_PESO = "Peso";
+    public static final String MESSAGE_SATURACION = "Saturacion";
+    public static final String MESSAGE_TEMPERATURA = "Temperatura";
+    public static final String MESSAGE_PRESION = "Presion";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent activityVisita = new Intent(getApplicationContext(), Visita.class);
                 activityVisita.putExtras(extras);
                 startActivityForResult(activityVisita, REQUEST_CODE_VISITA);
+            }
+        });
+
+        btnCorreo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://mail.google.com/mail/u/0/#inbox?compose=new";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
             }
         });
 
