@@ -62,37 +62,41 @@
         android:id="@+id/textViewDNI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="32dp"
         android:text="DNI:"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textViewNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="32dp"
         android:text="Nombre:"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDNI"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDNI" />
 
     <TextView
         android:id="@+id/textViewApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="32dp"
         android:text="Apellidos:"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <TextView
         android:id="@+id/textViewDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="32dp"
         android:text="Dirección:"
-        app:layout_constraintTop_toBottomOf="@+id/editTextApellido"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellido" />
 
     <TextView
         android:id="@+id/textView5"
@@ -111,15 +115,13 @@
         android:layout_height="22dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="190dp"
         android:text="Registro de Información"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/buttonRegistrar"
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="157dp"
