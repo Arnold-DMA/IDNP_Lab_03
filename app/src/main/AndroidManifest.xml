@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDNP_Lab_03">
         <activity
+            android:name=".Visita"
+            android:exported="true" />
+        <activity
+            android:name=".Paciente"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
