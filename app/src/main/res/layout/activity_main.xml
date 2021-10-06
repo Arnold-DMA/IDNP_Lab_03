@@ -10,9 +10,9 @@
         android:id="@+id/btnPaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="44dp"
         android:text="REGISTRAR PACIENTE"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,9 +20,10 @@
         android:id="@+id/textViewDatos"
         android:layout_width="348dp"
         android:layout_height="124dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="104dp"
         android:text="Catidad de pacientes: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCorreo" />
 
@@ -30,19 +31,22 @@
         android:id="@+id/textViewDatos2"
         android:layout_width="348dp"
         android:layout_height="124dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Catidad de visitas: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDatos" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatos"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnVisita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
         android:layout_marginTop="32dp"
         android:text="REGISTRAR VISITA"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPaciente" />
 
@@ -50,9 +54,10 @@
         android:id="@+id/btnCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
         android:layout_marginTop="32dp"
         android:text="ENVIAR CORREO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVisita" />
 
@@ -60,12 +65,41 @@
         android:id="@+id/editTextPaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="DNI de Paciente"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPaciente" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPaciente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPaciente" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDatos"
+        app:layout_constraintTop_toBottomOf="@+id/btnCorreo"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de resultados"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
